@@ -14,8 +14,8 @@ const isActiveLink = (path) => {
                 <button class="btn btn-md btn-primary ms-3">Search</button>
             </div>
         </div>
-        <div class="col-md-4 col-sm-6 d-flex justify-content-end">
-          <div class="col-md-4 col-sm-6 align-items-center p-2 rounded-3 bg-secondary d-flex p-3 justify-content-between">
+        <div class=" col-lg-2 col-md-3 col-sm-6 d-flex justify-content-end">
+          <div class="col-md-12 col-sm-12 align-items-center p-2 rounded-3 bg-secondary d-flex p-0 justify-content-between" >
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">
               <img src="../assets/icons/cart.svg" class="icon">
             </button>
@@ -59,6 +59,11 @@ const isActiveLink = (path) => {
 <style scoped>
 .icon {
     height: 30px;
+}
+@media (min-width: 770px) and (max-width: 1200px) {
+    .icon{
+        height: 20px;
+    }
 }
 </style>
 <!--
