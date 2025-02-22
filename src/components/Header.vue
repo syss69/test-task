@@ -15,7 +15,7 @@ const isActiveLink = (path) => {
             </div>
         </div>
         <div class=" col-lg-2 col-md-3 col-sm-6 d-flex justify-content-end">
-          <div class="col-md-12 col-sm-12 align-items-center p-2 rounded-3 bg-secondary d-flex p-0 justify-content-between" >
+          <div class="col-md-12 col-sm-12 align-items-center p-2 rounded-3 bg-secondary d-flex px-0 justify-content-between" >
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">
               <img src="../assets/icons/cart.svg" class="icon">
             </button>
@@ -30,7 +30,7 @@ const isActiveLink = (path) => {
     </div>
     <ul class="nav nav-pills mb-3 py-3">
             <li class="nav-item">
-            <RouterLink :to="'/'" :class="isActiveLink('/')">
+            <RouterLink to="/" :class="isActiveLink('/')">
                 <p>Accueil</p>
             </RouterLink>
         </li>
@@ -45,12 +45,12 @@ const isActiveLink = (path) => {
             </RouterLink>
         </li>
         <li class="nav-item">
-            <RouterLink :to="'/category/jewelery'" :class="isActiveLink('/category/jewelery')">
+            <RouterLink to="/category/jewelery" :class="isActiveLink('/category/jewelery')">
                 <p>Bijoux</p>
             </RouterLink>
         </li>
         <li class="nav-item">
-            <RouterLink :to="'/category/electronics'" :class="isActiveLink('/category/electronics')">
+            <RouterLink to="/category/electronics" :class="isActiveLink('/category/electronics')">
                 <p>Electronics</p>
             </RouterLink>
         </li>
@@ -60,7 +60,7 @@ const isActiveLink = (path) => {
 .icon {
     height: 30px;
 }
-@media (min-width: 770px) and (max-width: 1200px) {
+@media (min-width: 770px) and (max-width: 1330px) {
     .icon{
         height: 20px;
     }

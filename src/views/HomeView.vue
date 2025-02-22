@@ -4,7 +4,6 @@ import Carousel from '@/components/Carousel.vue';
 import CategoryPreview from'@/components/CategoryPreview.vue'
 </script>
 <template>
-    <Modals />
     <Carousel/>
     <CategoryPreview />
 </template>

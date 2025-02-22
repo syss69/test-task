@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
 <template>
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -12,28 +14,34 @@
               <div class="container">
                 <div class="carousel-caption text-end">
                   <h1>Example headline.</h1>
-                  <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  <p class="opacity-75">This is an example. Link goes to men's clothing page</p>
+                  <RouterLink :to="'/category/men\'s clothing'">
+                    <p class="btn btn-lg btn-primary">Learn more</p>
+                  </RouterLink>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img src="../assets/photos/pexels-tirachard-kumtanom-112571-450055.jpg" style="height: 36rem; width: 100%;">
               <div class="container">
                 <div class="carousel-caption text-end">
                   <h1>Another example headline.</h1>
-                  <p>Some representative placeholder content for the second slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  <p>This is an example. Link goes to women's clothing page</p>
+                  <RouterLink :to="'/category/women\'s clothing'">
+                    <p class="btn btn-lg btn-primary">Learn more</p>
+                  </RouterLink>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img src="../assets/photos/pexels-raulling-30786905.jpg" style="height: 36rem; width: 100%;">
               <div class="container">
                 <div class="carousel-caption text-end">
                   <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  <p>This is an example. Link goes to jewerly page</p>
+                  <RouterLink to="/category/jewelery">
+                    <p class="btn btn-lg btn-primary">Browse gallery</p>
+                  </RouterLink>
                 </div>
               </div>
             </div>

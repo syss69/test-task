@@ -45,3 +45,10 @@ import { RouterLink } from 'vue-router';
             </div>
         </div>
 </template>
+<style scoped>
+@media (min-width: 761px) and (max-width: 1100px) {
+    .card-img-top{
+    display: none;
+}
+}
+</style>
