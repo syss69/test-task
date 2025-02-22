@@ -29,7 +29,7 @@ onMounted(() => {
             <div class="col-6 d-flex flex-column justify-content-between p-5">
                 <h2>{{ productData.title }}</h2>
                 <p>{{ productData.description }}</p>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between" id="cardBottom">
                     <Rating :rating="productData.rating" />
                     <h4>{{ productData.price }}</h4>
                     <div class="d-flex">
@@ -53,5 +53,13 @@ onMounted(() => {
     min-height: 600px;
     max-height: 70%;
 }
-
+@media (max-width: 1100px){
+    #productContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #cardBottom{
+        flex-direction: column;
+    }
+}
 </style>

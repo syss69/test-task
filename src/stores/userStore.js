@@ -3,16 +3,20 @@ import { defineStore } from 'pinia'
 
 export const useUserStore = defineStore("user", () => {
   const user = ref(null);
-  if (localStorage.getItem("user") !== null) {
-    user.value = JSON.parse(localStorage.getItem("user"));
+  let storedUser = localStorage.getItem("user")
+  if ( storedUser !== null) {
+    user.value = JSON.parse(storedUser);
   }
   watch(user, (change) => {
-    localStorage.setItem("user", JSON.stringify(change));
-  }, 
-  { deep: true })
+    if(change){
+        localStorage.setItem("user", JSON.stringify(change));
+    }else{
+        localStorage.removeItem("user");
+    }
+  }, { deep: true })
+
   const addUser = (userData) => {
-      const item = user.value
-      if (!item) {
+      if (!user.value) {
         user.value = userData;
       }
   };
