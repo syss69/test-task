@@ -2,7 +2,7 @@
 
 Stack:
 <ul>
-  <li>Vue #</li>
+  <li>Vue 3</li>
   <li>Pinia</li>
   <li>Bootstrap</li>
 </ul>
