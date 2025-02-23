@@ -8,7 +8,7 @@ const cartStore = useCartStore();
 const likedStore = useLikedStore();
 
 const route = useRoute();
-const productsContainer = ref([]);  // Массив продуктов
+const productsContainer = ref([]);  
 
 onMounted(() => {
     loadData(route.params.catName);
