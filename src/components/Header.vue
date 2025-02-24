@@ -29,13 +29,14 @@ const isActiveLink = (path) => {
         </div>
     </div>
     <div class="row">
-        <div id="actionBtnsDropdown" class="d-flex justify-content-center align-items-center">
-            <div class="dropdown w-auto" data-bs-auto-close="true">
+        <div id="actionBtnsDropdown" class="d-flex">
+            <div class="dropdown dropend w-auto" data-bs-auto-close="true">
                 <button class="btn btn-secondary w-100" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="../assets/icons/menu-svgrepo-com.svg" class="icon">
                 </button>
-                <div class="dropdown-menu bg-secondary p-2" style="min-width: 100%;" aria-labelledby="dropdownMenuButton" >
-                    <button type="button" class="btn mb-2" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <div class="dropdown-menu bg-secondary p-0" style="min-width: 100%; max-height:45px" aria-labelledby="dropdownMenuButton" >
+                    <div class="d-flex flex-row p-0">
+                        <button type="button" class="btn mb-2" data-bs-toggle="modal" data-bs-target="#cartModal">
                         <img src="../assets/icons/cart.svg" class="icon">
                     </button>
                     <button type="button" class="btn mb-2" data-bs-toggle="modal" data-bs-target="#likedModal">
@@ -44,6 +45,7 @@ const isActiveLink = (path) => {
                     <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#accountModal"> 
                         <img src="../assets/icons/account-svgrepo-com.svg" class="icon"> 
                     </button>
+                    </div>
                 </div>
             </div>
         </div>

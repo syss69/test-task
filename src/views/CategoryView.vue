@@ -38,7 +38,7 @@ const addToCart = (product) => {
 <template>
     <div class="container">
         <div class="row">
-            <div v-for="product in productsContainer" :key="product.id" class="col-md-3 col-sm-6">
+            <div v-for="product in productsContainer" :key="product.id" class="col-lg-3 col-md-4 col-sm-6">
                 <div class="card d-flex flex-column justify-content-between my-3">
                     <img class="card-img-top" :src="product.image" :alt="product.title" style="width: 100%;" />
                     <div class="card-body" style="min-height: 200px; display: flex; flex-direction: column;">
